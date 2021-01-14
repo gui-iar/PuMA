@@ -130,7 +130,7 @@ if __name__ == '__main__':
     ierr = check_cli_arguments(args)
     if ierr != 0: sys.exit(1)
     
-    plot_residuals(par_fname=args.par_fname, tim_fname=args.tim_fname, output_dir=args.output_dir, units='ms')
+    plot_residuals(par_fname=args.par_fname, tim_fname=args.tim_fname, output_dir=args.output_dir, units=args.units)
 
     #tim_fname = '/home/jovyan/work/shared/PuGli-S/tims/J0437-4715_A1.tim'  
     #par_fname = '/opt/pulsar/puma/config/timing//J0437-4715.par'
